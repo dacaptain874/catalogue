@@ -1,29 +1,40 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import products from "./data/products.js"
+import ProductList from './components/ProductList.jsx'
 
 const App = () => {
 
+  const [value, setValue] = useState("")
+  const [filteredProducts, setFilteredProducts] = useState(products)
+
+  const searchValue = (e) => {
+    setValue(e.target.value)
+    const filtered =  products.filter(product => product.title.toLowerCase().includes(value.toLowerCase()))
+    setFilteredProducts(filtered)
+  }
+
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = window.scrollY;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setIsVisible(false); 
+      } else {
+        setIsVisible(true); 
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <ul className='product-list' >
-      {products.map(product => (
-        <li key={product.id} >
-          <div className={"product"}>
-            <div className="img-container" >
-              <img src={product.img} className='img'/>
-            </div>
-            <article>
-              <h3 className='product-title' >{product.title}</h3>
-              <p className='product-description' >{product.description}</p>
-              <span className='product-price' >Narxi: <b>{product.price}</b> so'm </span>
-            </article>
-            <div className="product-quantity">
-              <p>blok: (<b>{product.blok}</b>) </p>
-              <p>dona: (<b>{product.quantity}</b>) </p>
-            </div>
-          </div>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <input className={`sticky-input ${isVisible ? "input" : "hidden"}`} value={value} onChange={searchValue} type="text" placeholder='search...' />
+      <ProductList products={filteredProducts} />
+    </div>
   )
 }
 
