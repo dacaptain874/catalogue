@@ -9,6 +9,8 @@
 
 ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .product-list {
@@ -17,11 +19,14 @@ ul {
   gap: 1em;
 }
 
+.product-title, .product-description {
+  text-transform: capitalize;
+}
+
 .product {
   border: 1px solid #D1D1D1;
   border-radius: 10px;
   padding: .5em;
-  text-transform: capitalize;
   background: #E5E5E5;
   line-height: 2;
   width: 250px;
@@ -38,27 +43,6 @@ ul {
 
 .product-quantity {
   display: flex;
-  gap: .5em;
-  justify-content: space-between;
+  gap: 3em;
   align-items: center;
-}
-
-.product-quantity > * {
-  padding: .5em 0;
-}
-
-.product-quantity-btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5em;
-}
-
-.product-quantity-btns div {
-  line-height: 1;
-  padding: .75em;
-  background-color: #D1D1D1;
-  border-radius: 6px;
-  cursor: pointer;
-  height: max-content;
 }
