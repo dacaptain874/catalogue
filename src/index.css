@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.product {
+  border: 1px solid #D1D1D1;
+  border-radius: 10px;
+  padding: .5em;
+  text-transform: capitalize;
+  background: #E5E5E5;
+  line-height: 2;
+  width: 250px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.product-quantity {
+  display: flex;
+  gap: .5em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-quantity > * {
+  padding: .5em 0;
+}
+
+.product-quantity-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.product-quantity-btns div {
+  line-height: 1;
+  padding: .75em;
+  background-color: #D1D1D1;
+  border-radius: 6px;
+  cursor: pointer;
+  height: max-content;
+}
