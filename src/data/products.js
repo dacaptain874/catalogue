@@ -191,6 +191,8 @@ const products = [
   { id: 183, title: "Machalka wips", price: 8500, quantity: 1, quantityBlok: 1, blok: 2, description: "machalka wips ", img: "https://image.made-in-china.com/203f0j00rwItgbWGvvpz/Factory-Wholesale-Fashion-Custom-Stripe-Woven-Recycle-Elastic-Tape.webp"},
   { id: 184, title: "Machalka 3260", price: 13800, quantity: 1, quantityBlok: 1, blok: 2, description: "machalka 3260 ", img: "https://images.uzum.uz/cns4vrdod9o9u8o1oo0g/original.jpg"},
   { id: 185, title: "Machalka 2627", price: 14900, quantity: 1, quantityBlok: 1, blok: 2, description: "machalka 2627 ", img: "https://images.uzum.uz/cobarq72u18gghco2290/original.jpg"},
+  { id: 186, title: "Osvejitel romantika", price: 12400, quantity: 1, quantityBlok: 1, blok: 2, description: "romantika osvejitel 300ml ", img: "https://images.uzum.uz/cc6qd26ha88ep89kju40/original.jpg"},
+  { id: 187, title: "Osvejitel bref 2ta", price: 28300, quantity: 1, quantityBlok: 1, blok: 2, description: "bref osvejitel 8ta shar", img: "https://images.uzum.uz/csqe3mb4nkdilc6ahkmg/original.jpg"},
 
 
 
