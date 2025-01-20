@@ -13,26 +13,11 @@ const App = () => {
     setFilteredProducts(filtered)
   }
 
-  const [isVisible, setIsVisible] = useState(true);
-  let lastScrollY = window.scrollY;
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setIsVisible(false); 
-      } else {
-        setIsVisible(true); 
-      }
-      lastScrollY = window.scrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div>
-      <input className={`sticky-input ${isVisible ? "input" : "hidden"}`} value={value} onChange={searchValue} type="text" placeholder='search...' />
+      <div className='input-container'>
+        <input className="input" value={value} onChange={searchValue} type="text" placeholder='search...' />
+      </div>
       <ProductList products={filteredProducts} />
     </div>
   )

@@ -13,11 +13,15 @@ ul {
   justify-content: center;
 }
 
-.input {
+.input-container {
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(5%);
+  width: 100%;
+  background-color:#D1D1D1;
+}
+
+.input {
   display: block;
   width: 90%;
   margin: .5em auto;
