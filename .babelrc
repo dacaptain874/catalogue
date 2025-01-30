@@ -1,6 +1,0 @@
-{
-  "presets": [
-    ["@babel/preset-env", { "targets": { "ios": "12" } }],
-    "@babel/preset-react"
-  ]
-}
