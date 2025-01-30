@@ -67,7 +67,7 @@ const products = [
   { id: 60, title: "persil gel (eron)", price: 79000, quantity: 1, quantityBlok: 1, blok: 4, description: "persil gel 2700ml", img: "https://images.uzum.uz/cqn11mvfrr8a72r6u99g/original.jpg" },
   { id: 61, title: "ver nel", price: 30600, quantity: 1, quantityBlok: 1, blok: 12, description: "ver nel 910ml", img: "https://images.uzum.uz/cd3q9kn0tgqvlm5815tg/original.jpg" },
   // { id: 62, title: "yumos konditsioner", price: 52400, quantity: 1, quantityBlok: 1, blok: 9, description: "yumos konditsioner 1440ml", img: "https://images.uzum.uz/ct9gu35pb7f7ago7gnq0/original.jpg" },
-  { id: 63, title: "yumos konditsioner", price: 83300, quantity: 1, quantityBlok: 1, blok: 4, description: "yumos konditsioner 2520ml", img: "https://images.uzum.uz/ch4j7k357mg830i28su0/original.jpg" },
+  // { id: 63, title: "yumos konditsioner", price: 83300, quantity: 1, quantityBlok: 1, blok: 4, description: "yumos konditsioner 2520ml", img: "https://images.uzum.uz/ch4j7k357mg830i28su0/original.jpg" },
   { id: 64, title: "utyonok gel", price: 37600, quantity: 1, quantityBlok: 1, blok: 12, description: "utyonok gel 900ml", img: "https://images.uzum.uz/co0mq1upom4ma10qs8g0/original.jpg" },
   { id: 65, title: "utyonok stiker", price: 15800, quantity: 1, quantityBlok: 1, blok: 24, description: "utyonok stiker 3ta", img: "https://images.uzum.uz/ckle0okjvf2tgsrp8t0g/original.jpg" },
   // { id: 66, title: "eco salfetka 75talik", price: 71000, quantity: 1, quantityBlok: 1, blok: 1, description: "salfetka 21x21 40ta", img: "./images/eco-75talik bez logo.jpeg" },
